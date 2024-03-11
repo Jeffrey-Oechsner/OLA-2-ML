@@ -1,0 +1,34 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Results</h1>
+        <p>The predicted total crimes: {{ prediction }}</p>
+        <a href="/">Try another prediction</a>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Results</h1>
+        {% if year %}
+        <p>Prediction for the year: {{ year }}</p>
+        {% endif %}
+        <p>The predicted total crimes: {{ prediction }}</p>
+        <a href="/">Try another prediction</a>
+    </div>
+</body>
+</html>

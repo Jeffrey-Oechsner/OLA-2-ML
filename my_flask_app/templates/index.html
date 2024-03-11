@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crime Statistics Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Crime Statistics Prediction</h1>
+        <form action="/predict" method="post">
+            <!-- Adding input fields for all required features -->
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year"><br><br>
+            <label for="crimes_penal_code">Crimes Penal Code:</label>
+            <input type="number" id="crimes_penal_code" name="crimes_penal_code"><br><br>
+            
+            <label for="crimes_person">Crimes Person:</label>
+            <input type="number" id="crimes_person" name="crimes_person"><br><br>
+            
+            <label for="murder">Murder:</label>
+            <input type="number" id="murder" name="murder"><br><br>
+            
+            <label for="assault">Assault:</label>
+            <input type="number" id="assault" name="assault"><br><br>
+            
+            <label for="sexual_offenses">Sexual Offenses:</label>
+            <input type="number" id="sexual_offenses" name="sexual_offenses"><br><br>
+            
+            <label for="rape">Rape:</label>
+            <input type="number" id="rape" name="rape"><br><br>
+            
+            <label for="stealing_general">Stealing General:</label>
+            <input type="number" id="stealing_general" name="stealing_general"><br><br>
+            
+            <label for="burglary">Burglary:</label>
+            <input type="number" id="burglary" name="burglary"><br><br>
+            
+            <label for="house_theft">House Theft:</label>
+            <input type="number" id="house_theft" name="house_theft"><br><br>
+            
+            <label for="vehicle_theft">Vehicle Theft:</label>
+            <input type="number" id="vehicle_theft" name="vehicle_theft"><br><br>
+            
+            <label for="out_of_vehicle_theft">Out of Vehicle Theft:</label>
+            <input type="number" id="out_of_vehicle_theft" name="out_of_vehicle_theft"><br><br>
+            
+            <label for="shop_theft">Shop Theft:</label>
+            <input type="number" id="shop_theft" name="shop_theft"><br><br>
+            
+            <label for="robbery">Robbery:</label>
+            <input type="number" id="robbery" name="robbery"><br><br>
+            
+            <label for="fraud">Fraud:</label>
+            <input type="number" id="fraud" name="fraud"><br><br>
+            
+            <label for="criminal_damage">Criminal Damage:</label>
+            <input type="number" id="criminal_damage" name="criminal_damage"><br><br>
+            
+            <label for="other_penal_crimes">Other Penal Crimes:</label>
+            <input type="number" id="other_penal_crimes" name="other_penal_crimes"><br><br>
+            
+            <label for="narcotics">Narcotics:</label>
+            <input type="number" id="narcotics" name="narcotics"><br><br>
+            
+            <label for="drunk_driving">Drunk Driving:</label>
+            <input type="number" id="drunk_driving" name="drunk_driving"><br><br>
+            
+            <label for="population">Population:</label>
+            <input type="number" id="population" name="population"><br><br>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
